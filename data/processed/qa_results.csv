@@ -1,0 +1,72 @@
+check,status,detail
+File exists,✅ PASS,C:\Users\PhotonUser\My Files\OneDrive\Files\Manzanillo\manzanillo-digital-twin\data\processed\manzanillo_training_data.csv
+Row count > 10,✅ PASS,19 rows — NOTE: only ~19 valid sites in Colima
+No fully duplicate rows,✅ PASS,0 duplicates
+Elevation_m: no nulls,✅ PASS,0 nulls
+Slope_deg: no nulls,✅ PASS,0 nulls
+NDVI: no nulls,✅ PASS,0 nulls
+Latitudes in Colima range (18.5–20.0),✅ PASS,"min=19.0014, max=19.4094"
+Longitudes in Colima range (-105.5 to -103.5),✅ PASS,"min=-104.6279, max=-103.9601"
+NDVI values in valid range (-1 to 1),✅ PASS,"min=0.159, max=0.670"
+Slope_deg in valid range (0–90°),✅ PASS,"min=1.96, max=40.92"
+File exists,✅ PASS,C:\Users\PhotonUser\My Files\OneDrive\Files\Manzanillo\manzanillo-digital-twin\data\processed\manzanillo_FINAL_MODEL_DATA.csv
+Row count > 10,✅ PASS,16 rows — CRITICAL WARNING: < 20 rows means Random Forest is likely overfitted
+No extreme outliers in Fuel_Target (>1000),❌ FAIL,1 extreme values detected — check UPMID 59291 which shows 19875 in raw data
+File exists,✅ PASS,C:\Users\PhotonUser\My Files\OneDrive\Files\Manzanillo\manzanillo-digital-twin\data\processed\quantum_targets.csv
+Row count == 50,✅ PASS,50 rows
+Risk_Score column present,✅ PASS,
+Max Risk_Score == 100.0,✅ PASS,max=100.00
+Target latitudes in Colima bounding box,✅ PASS,"min=18.7608, max=19.4871"
+Target longitudes in Colima bounding box,✅ PASS,"min=-104.0437, max=-103.6361"
+File exists,✅ PASS,C:\Users\PhotonUser\My Files\OneDrive\Files\Manzanillo\manzanillo-digital-twin\data\processed\optimized_sensor_network.csv
+Row count == 25,✅ PASS,25 rows
+No null coordinates,✅ PASS,
+15 Asset_Defense sensors,✅ PASS,15
+10 Wildland_Perimeter sensors,✅ PASS,10
+Asset sensors within extended Zone A/B area,✅ PASS,lat range: 19.0103–19.1018
+File exists,✅ PASS,C:\Users\PhotonUser\My Files\OneDrive\Files\Manzanillo\manzanillo-digital-twin\data\history\sim_training_data.csv
+All rows have 7 columns,❌ FAIL,23 malformed rows found
+pandas can read file,✅ PASS,9 rows successfully parsed
+File exists,✅ PASS,C:\Users\PhotonUser\My Files\OneDrive\Files\Manzanillo\manzanillo-digital-twin\data\raw\inegi_cem\Colima_r15m.tif
+File opens without error,✅ PASS,
+CRS is defined,✅ PASS,EPSG:8999
+Resolution ~ 0.000139° (15 m),✅ PASS,res=0.00013889
+Has valid (>-1000) elevation values,✅ PASS,
+Elevation range reasonable (0–4000 m),❌ FAIL,"min=-8, max=32767"
+Bounds cover Colima state,✅ PASS,"left=-104.691, right=-103.486"
+sentinel/ directory exists,✅ PASS,
+At least one .zip file present,✅ PASS,1 zips found
+File size > 0.5 GB (real Sentinel tile),✅ PASS,1.13 GB
+"Band 4 (Red, 10m) present in ZIP",✅ PASS,S2C_MSIL2A_20260215T172411_N0512_R012_T13QEB_20260215T210013.SAFE/GRANULE/L2A_T13QEB_A007561_20260215T172845/IMG_DATA/R10m/T13QEB_20260215T172411_B04_10m.jp2
+"Band 8 (NIR, 10m) present in ZIP",✅ PASS,S2C_MSIL2A_20260215T172411_N0512_R012_T13QEB_20260215T210013.SAFE/GRANULE/L2A_T13QEB_A007561_20260215T172845/IMG_DATA/R10m/T13QEB_20260215T172411_B08_10m.jp2
+Tile ID is 13QEB (Manzanillo),✅ PASS,filename: S2C_MSIL2A_20260215T172411_N0512_R012_T13QEB_20260215T210013.SAFE.zip
+File exists,✅ PASS,C:\Users\PhotonUser\My Files\OneDrive\Files\Manzanillo\manzanillo-digital-twin\data\raw\conafor_infys\INFyS_2015_2020_Colima_qM0XXKR.xlsx
+File readable by pandas,✅ PASS,74 rows
+Row count > 50,✅ PASS,74 rows
+Y_C3 column present (latitude),✅ PASS,
+X_C3 column present (longitude),✅ PASS,
+UPMID column present (site ID),✅ PASS,
+Arbolado sheet readable,✅ PASS,2625 rows
+Tree height (ALTURA_TOTAL) column present,✅ PASS,AlturaTotal_C3
+Has trees with positive height,✅ PASS,2625 valid trees
+API returns 200,✅ PASS,status=200
+wind_speed_10m present in response,✅ PASS,
+wind_direction_10m present in response,✅ PASS,
+Wind speed >= 0 kn,✅ PASS,1.4 kn
+Wind direction 0–360°,✅ PASS,270°
+File exists,✅ PASS,C:\Users\PhotonUser\My Files\OneDrive\Files\Manzanillo\manzanillo-digital-twin\models\manzanillo_biomass_model.joblib
+File size < 500 KB (sanity check),✅ PASS,133.5 KB
+Model loads without error,✅ PASS,
+Has predict method,✅ PASS,
+Model predicts on dummy input,✅ PASS,prediction=6.75 m tree height
+Prediction in plausible range (1–50 m),✅ PASS,"6.75 — if outside range, model may be overfitted"
+File exists,✅ PASS,C:\Users\PhotonUser\My Files\OneDrive\Files\Manzanillo\manzanillo-digital-twin\data\processed\manzanillo_drive.graphml
+File size 5–20 MB (sanity check),✅ PASS,10.7 MB
+Graph loads without error,✅ PASS,
+Has > 100 nodes (not empty),✅ PASS,"9066 nodes, 23523 edges"
+Graph is connected (largest component > 90% of nodes),✅ PASS,
+No Earthdata username in notebook 00 output,✅ PASS,"⚠️  USERNAME ""kingroyalfox"" FOUND IN COMMITTED NOTEBOOK OUTPUT — clear outputs before pushing"
+.dodsrc not present in repo,✅ PASS,
+.gitignore covers data/raw/,✅ PASS,
+.gitignore covers logs/,✅ PASS,
+.gitignore covers __pycache__/,✅ PASS,

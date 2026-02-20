@@ -8,6 +8,9 @@ __pycache__/
 # Your listing showed these contain temporary cache files
 cache/
 logs/
+notebooks/.dodsrc
+.netrc
+*.urs_cookies
 
 # --- 3. Raw Data (BLOCK THIS - 1GB+) ---
 # This blocks the huge Sentinel zip files
@@ -32,3 +35,4 @@ data/processed/dem_delta_analysis.tif
 # --- 5. Models ---
 # Your .joblib file is only 137KB, so we can allow it safely
 # models/
+

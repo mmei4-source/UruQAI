@@ -36,3 +36,12 @@ qiskit-aer>=0.12.0
 pyyaml>=6.0
 tqdm>=4.60.0
 requests>=2.31.0
+
+# ── New additions for Phase II work (intern notebooks) ────────────────────
+pennylane>=0.33.0       
+openpyxl>=3.1.0          
+jupyter>=1.0.0           
+earthaccess>=0.8.0       
+requests>=2.31.0          
+dimod>=0.12.0
+dwave-networkx>=0.8.0        

@@ -1,0 +1,238 @@
+[
+  {
+    "N": 8,
+    "K": 4,
+    "solvers": {
+      "greedy": {
+        "coverage": 3.7502992127142023,
+        "energy": -107.7502992127142,
+        "violations": 1,
+        "runtime": 4.649162292480469e-05,
+        "n_selected": 4,
+        "selected_indices": [
+          7,
+          1,
+          3,
+          2
+        ]
+      },
+      "sa": {
+        "mean_coverage": 3.3164418044632176,
+        "std_coverage": 0.0,
+        "mean_violations": 0.0,
+        "std_violations": 0.0,
+        "mean_runtime": 0.7954550584157308,
+        "std_runtime": 0.03481851393609108,
+        "all_runs": [
+          {
+            "coverage": 3.3164418044632176,
+            "energy": -131.3164418044632,
+            "violations": 0,
+            "runtime": 0.8322646617889404,
+            "n_selected": 4,
+            "selected_indices": [
+              2,
+              3,
+              5,
+              7
+            ],
+            "iterations": 50000
+          },
+          {
+            "coverage": 3.3164418044632176,
+            "energy": -131.3164418044632,
+            "violations": 0,
+            "runtime": 0.7487256526947021,
+            "n_selected": 4,
+            "selected_indices": [
+              2,
+              3,
+              5,
+              7
+            ],
+            "iterations": 50000
+          },
+          {
+            "coverage": 3.3164418044632176,
+            "energy": -131.3164418044632,
+            "violations": 0,
+            "runtime": 0.8053748607635498,
+            "n_selected": 4,
+            "selected_indices": [
+              2,
+              3,
+              5,
+              7
+            ],
+            "iterations": 50000
+          }
+        ]
+      }
+    }
+  },
+  {
+    "N": 10,
+    "K": 8,
+    "solvers": {
+      "greedy": {
+        "coverage": 6.55564137381691,
+        "energy": -374.55564137381697,
+        "violations": 6,
+        "runtime": 4.172325134277344e-05,
+        "n_selected": 8,
+        "selected_indices": [
+          9,
+          4,
+          5,
+          7,
+          8,
+          6,
+          0,
+          3
+        ]
+      },
+      "sa": {
+        "mean_coverage": 4.506080315357659,
+        "std_coverage": 0.0,
+        "mean_violations": 1.0,
+        "std_violations": 0.0,
+        "mean_runtime": 0.8710552056630453,
+        "std_runtime": 0.11102436965396824,
+        "all_runs": [
+          {
+            "coverage": 4.506080315357659,
+            "energy": -460.5060803153576,
+            "violations": 1,
+            "runtime": 1.0279111862182617,
+            "n_selected": 6,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              5,
+              7,
+              9
+            ],
+            "iterations": 50000
+          },
+          {
+            "coverage": 4.506080315357659,
+            "energy": -460.5060803153576,
+            "violations": 1,
+            "runtime": 0.7865636348724365,
+            "n_selected": 6,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              5,
+              7,
+              9
+            ],
+            "iterations": 50000
+          },
+          {
+            "coverage": 4.506080315357659,
+            "energy": -460.5060803153576,
+            "violations": 1,
+            "runtime": 0.7986907958984375,
+            "n_selected": 6,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              5,
+              7,
+              9
+            ],
+            "iterations": 50000
+          }
+        ]
+      }
+    }
+  },
+  {
+    "N": 12,
+    "K": 8,
+    "solvers": {
+      "greedy": {
+        "coverage": 7.068708005033857,
+        "energy": -303.06870800503384,
+        "violations": 9,
+        "runtime": 2.765655517578125e-05,
+        "n_selected": 8,
+        "selected_indices": [
+          3,
+          9,
+          5,
+          6,
+          4,
+          10,
+          2,
+          1
+        ]
+      },
+      "sa": {
+        "mean_coverage": 5.253116097124034,
+        "std_coverage": 0.0,
+        "mean_violations": 1.0,
+        "std_violations": 0.0,
+        "mean_runtime": 0.9109084606170654,
+        "std_runtime": 0.14695179617464188,
+        "all_runs": [
+          {
+            "coverage": 5.253116097124034,
+            "energy": -485.253116097124,
+            "violations": 1,
+            "runtime": 0.7721493244171143,
+            "n_selected": 7,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              7,
+              9,
+              10,
+              11
+            ],
+            "iterations": 50000
+          },
+          {
+            "coverage": 5.253116097124034,
+            "energy": -485.253116097124,
+            "violations": 1,
+            "runtime": 1.114271879196167,
+            "n_selected": 7,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              7,
+              9,
+              10,
+              11
+            ],
+            "iterations": 50000
+          },
+          {
+            "coverage": 5.253116097124034,
+            "energy": -485.253116097124,
+            "violations": 1,
+            "runtime": 0.846304178237915,
+            "n_selected": 7,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              7,
+              9,
+              10,
+              11
+            ],
+            "iterations": 50000
+          }
+        ]
+      }
+    }
+  }
+]

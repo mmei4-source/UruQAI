@@ -1,0 +1,378 @@
+[
+  {
+    "N": 8,
+    "K": 3,
+    "solvers": {
+      "greedy": {
+        "coverage": 2.7785585770202976,
+        "energy": -50.778558577020306,
+        "violations": 1,
+        "runtime": 5.626678466796875e-05,
+        "n_selected": 3,
+        "selected_indices": [
+          0,
+          7,
+          6
+        ]
+      },
+      "sa": {
+        "mean_coverage": 2.6786694108625757,
+        "std_coverage": 0.0,
+        "mean_violations": 0.0,
+        "all_runs": [
+          {
+            "coverage": 2.6786694108625757,
+            "energy": -74.67866941086257,
+            "violations": 0,
+            "runtime": 0.9882073402404785,
+            "n_selected": 3,
+            "selected_indices": [
+              0,
+              5,
+              7
+            ]
+          },
+          {
+            "coverage": 2.6786694108625757,
+            "energy": -74.67866941086257,
+            "violations": 0,
+            "runtime": 0.7572333812713623,
+            "n_selected": 3,
+            "selected_indices": [
+              0,
+              5,
+              7
+            ]
+          },
+          {
+            "coverage": 2.6786694108625757,
+            "energy": -74.67866941086257,
+            "violations": 0,
+            "runtime": 0.7529013156890869,
+            "n_selected": 3,
+            "selected_indices": [
+              0,
+              5,
+              7
+            ]
+          }
+        ]
+      },
+      "pasqal": {
+        "mean_coverage": 3.0261727209405254,
+        "std_coverage": 0.4521382848680111,
+        "mean_violations": 1.0,
+        "all_runs": [
+          {
+            "coverage": 3.4783110058085365,
+            "violations": 1,
+            "n_selected": 4,
+            "selected_indices": [
+              0,
+              2,
+              6,
+              7
+            ],
+            "bitstring": "10100011",
+            "total_counts": 32,
+            "unique_bitstrings": 32,
+            "top_5_counts": {
+              "00110111": 1,
+              "10110111": 1,
+              "00011111": 1,
+              "10110110": 1,
+              "10110101": 1
+            },
+            "runtime": 75.69344282150269,
+            "runs": 2000,
+            "batch_id": "ca128c53-edc4-47d5-84fa-0d4619caf4da"
+          },
+          {
+            "coverage": 2.5740344360725143,
+            "violations": 1,
+            "n_selected": 3,
+            "selected_indices": [
+              4,
+              6,
+              7
+            ],
+            "bitstring": "00001011",
+            "total_counts": 48,
+            "unique_bitstrings": 48,
+            "top_5_counts": {
+              "00011111": 1,
+              "10110111": 1,
+              "10110101": 1,
+              "10100111": 1,
+              "10010111": 1
+            },
+            "runtime": 90.94149947166443,
+            "runs": 5000,
+            "batch_id": "c110dc86-3ac0-4c3f-a93f-864878f6cf36"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "N": 10,
+    "K": 4,
+    "solvers": {
+      "greedy": {
+        "coverage": 3.3680261175804533,
+        "energy": -107.36802611758046,
+        "violations": 1,
+        "runtime": 0.0002315044403076172,
+        "n_selected": 4,
+        "selected_indices": [
+          4,
+          5,
+          7,
+          8
+        ]
+      },
+      "sa": {
+        "mean_coverage": 3.298873385508495,
+        "std_coverage": 0.0,
+        "mean_violations": 0.0,
+        "all_runs": [
+          {
+            "coverage": 3.298873385508495,
+            "energy": -131.2988733855085,
+            "violations": 0,
+            "runtime": 0.7819774150848389,
+            "n_selected": 4,
+            "selected_indices": [
+              3,
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "coverage": 3.298873385508495,
+            "energy": -131.2988733855085,
+            "violations": 0,
+            "runtime": 0.8369579315185547,
+            "n_selected": 4,
+            "selected_indices": [
+              3,
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "coverage": 3.298873385508495,
+            "energy": -131.2988733855085,
+            "violations": 0,
+            "runtime": 0.7884232997894287,
+            "n_selected": 4,
+            "selected_indices": [
+              3,
+              4,
+              5,
+              7
+            ]
+          }
+        ]
+      },
+      "pasqal": {
+        "mean_coverage": 3.0468148391337437,
+        "std_coverage": 0.0,
+        "mean_violations": 1.0,
+        "all_runs": [
+          {
+            "coverage": 3.0468148391337437,
+            "violations": 1,
+            "n_selected": 4,
+            "selected_indices": [
+              4,
+              6,
+              7,
+              9
+            ],
+            "bitstring": "0000101101",
+            "total_counts": 40,
+            "unique_bitstrings": 40,
+            "top_5_counts": {
+              "1011001111": 1,
+              "1011001101": 1,
+              "1000001111": 1,
+              "1001001111": 1,
+              "1010001111": 1
+            },
+            "runtime": 33.521573305130005,
+            "runs": 2000,
+            "batch_id": "5bc29089-5583-4ce1-88a0-ce3f87bb3f0c"
+          },
+          {
+            "coverage": 3.0468148391337437,
+            "violations": 1,
+            "n_selected": 4,
+            "selected_indices": [
+              4,
+              6,
+              7,
+              9
+            ],
+            "bitstring": "0000101101",
+            "total_counts": 54,
+            "unique_bitstrings": 54,
+            "top_5_counts": {
+              "1010001111": 1,
+              "1011001111": 1,
+              "1011001101": 1,
+              "1011011100": 1,
+              "1000001111": 1
+            },
+            "runtime": 33.729554176330566,
+            "runs": 5000,
+            "batch_id": "4c25ac20-06bc-497c-9439-7552ea85ceb3"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "N": 12,
+    "K": 8,
+    "solvers": {
+      "greedy": {
+        "coverage": 6.845046132754813,
+        "energy": -398.8450461327548,
+        "violations": 5,
+        "runtime": 3.600120544433594e-05,
+        "n_selected": 8,
+        "selected_indices": [
+          0,
+          10,
+          11,
+          3,
+          4,
+          1,
+          9,
+          7
+        ]
+      },
+      "sa": {
+        "mean_coverage": 5.755387342618579,
+        "std_coverage": 8.881784197001252e-16,
+        "mean_violations": 1.0,
+        "all_runs": [
+          {
+            "coverage": 5.755387342618578,
+            "energy": -485.7553873426186,
+            "violations": 1,
+            "runtime": 0.8943459987640381,
+            "n_selected": 7,
+            "selected_indices": [
+              0,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "coverage": 5.755387342618578,
+            "energy": -485.7553873426186,
+            "violations": 1,
+            "runtime": 0.6500084400177002,
+            "n_selected": 7,
+            "selected_indices": [
+              0,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "coverage": 5.755387342618578,
+            "energy": -485.7553873426186,
+            "violations": 1,
+            "runtime": 0.6603364944458008,
+            "n_selected": 7,
+            "selected_indices": [
+              0,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      "pasqal": {
+        "mean_coverage": 6.521422778559431,
+        "std_coverage": 0.0,
+        "mean_violations": 4.0,
+        "all_runs": [
+          {
+            "coverage": 6.521422778559431,
+            "violations": 4,
+            "n_selected": 8,
+            "selected_indices": [
+              0,
+              1,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "bitstring": "110100011111",
+            "total_counts": 87,
+            "unique_bitstrings": 87,
+            "top_5_counts": {
+              "111100011111": 1,
+              "101100011111": 1,
+              "101100110111": 1,
+              "011100010111": 1,
+              "101100011101": 1
+            },
+            "runtime": 24.36911129951477,
+            "runs": 2000,
+            "batch_id": "561c0810-c7d8-4a28-b2b0-650f68a7ea84"
+          },
+          {
+            "coverage": 6.521422778559431,
+            "violations": 4,
+            "n_selected": 8,
+            "selected_indices": [
+              0,
+              1,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "bitstring": "110100011111",
+            "total_counts": 112,
+            "unique_bitstrings": 112,
+            "top_5_counts": {
+              "110100001111": 1,
+              "111100011111": 1,
+              "101100111101": 1,
+              "100101111001": 1,
+              "110100011111": 1
+            },
+            "runtime": 84.62121176719666,
+            "runs": 5000,
+            "batch_id": "6e0f8872-ac52-46f9-a8e0-8bb89ee3d477"
+          }
+        ]
+      }
+    }
+  }
+]

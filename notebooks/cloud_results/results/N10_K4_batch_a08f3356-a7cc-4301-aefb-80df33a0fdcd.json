@@ -1,0 +1,36 @@
+{
+  "batch_id": "a08f3356-a7cc-4301-aefb-80df33a0fdcd",
+  "status": "DONE",
+  "instance": {
+    "instance_name": "pasqal_cloud_N12_K4",
+    "created_date": "2026-04-09",
+    "platform": "Pasqal Cloud",
+    "risk_source": "REAL - from CSV"
+  },
+  "result": {
+    "coverage": 7.178323804334511,
+    "violations": 5,
+    "n_selected": 9,
+    "selected_indices": [
+      0,
+      2,
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "bitstring": "101100111111",
+    "total_counts": 47,
+    "unique_bitstrings": 47,
+    "top_5_counts": {
+      "111100010111": 1,
+      "111000010111": 1,
+      "111100010011": 1,
+      "111100011111": 1,
+      "100101111001": 1
+    }
+  }
+}

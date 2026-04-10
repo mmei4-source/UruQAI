@@ -1,0 +1,244 @@
+[
+  {
+    "N": 8,
+    "K": 3,
+    "solvers": {
+      "greedy": {
+        "coverage": 2.7513578553339864,
+        "energy": -50.75135785533398,
+        "violations": 1,
+        "runtime": 9.417533874511719e-05,
+        "n_selected": 3,
+        "selected_indices": [
+          5,
+          6,
+          3
+        ]
+      },
+      "sa": {
+        "mean_coverage": 2.583563397172817,
+        "std_coverage": 0.0,
+        "mean_violations": 0.0,
+        "all_runs": [
+          {
+            "coverage": 2.583563397172817,
+            "energy": -74.58356339717281,
+            "violations": 0,
+            "runtime": 0.8057680130004883,
+            "n_selected": 3,
+            "selected_indices": [
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "coverage": 2.583563397172817,
+            "energy": -74.58356339717281,
+            "violations": 0,
+            "runtime": 0.7912752628326416,
+            "n_selected": 3,
+            "selected_indices": [
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "coverage": 2.583563397172817,
+            "energy": -74.58356339717281,
+            "violations": 0,
+            "runtime": 0.7968366146087646,
+            "n_selected": 3,
+            "selected_indices": [
+              2,
+              3,
+              5
+            ]
+          }
+        ]
+      },
+      "pasqal": {
+        "mean_coverage": 4.813743787821902,
+        "std_coverage": 0.0,
+        "mean_violations": 2.0,
+        "all_runs": [
+          {
+            "coverage": 4.813743787821902,
+            "violations": 2,
+            "n_selected": 6,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              5,
+              6,
+              7
+            ],
+            "bitstring": "10110111",
+            "total_counts": 18,
+            "unique_bitstrings": 18,
+            "top_5_counts": {
+              "10110111": 1,
+              "00110111": 1,
+              "10110011": 1,
+              "10110101": 1,
+              "00011111": 1
+            },
+            "runs": 500,
+            "batch_id": "25dd6802-a8cf-43d4-b73b-b9f502803869"
+          },
+          {
+            "coverage": 4.813743787821902,
+            "violations": 2,
+            "n_selected": 6,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              5,
+              6,
+              7
+            ],
+            "bitstring": "10110111",
+            "total_counts": 24,
+            "unique_bitstrings": 24,
+            "top_5_counts": {
+              "10110111": 1,
+              "00011111": 1,
+              "10100101": 1,
+              "00111111": 1,
+              "10110101": 1
+            },
+            "runs": 1000,
+            "batch_id": "a5bca3cc-7058-4aaf-9547-db1c87510a0f"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "N": 10,
+    "K": 4,
+    "solvers": {
+      "greedy": {
+        "coverage": 3.6858981866985485,
+        "energy": -83.68589818669854,
+        "violations": 2,
+        "runtime": 0.00023102760314941406,
+        "n_selected": 4,
+        "selected_indices": [
+          0,
+          6,
+          5,
+          9
+        ]
+      },
+      "sa": {
+        "mean_coverage": 3.342159324423507,
+        "std_coverage": 4.440892098500626e-16,
+        "mean_violations": 0.0,
+        "all_runs": [
+          {
+            "coverage": 3.3421593244235064,
+            "energy": -131.3421593244235,
+            "violations": 0,
+            "runtime": 0.8081459999084473,
+            "n_selected": 4,
+            "selected_indices": [
+              0,
+              2,
+              6,
+              9
+            ]
+          },
+          {
+            "coverage": 3.3421593244235064,
+            "energy": -131.3421593244235,
+            "violations": 0,
+            "runtime": 0.7936441898345947,
+            "n_selected": 4,
+            "selected_indices": [
+              0,
+              2,
+              6,
+              9
+            ]
+          },
+          {
+            "coverage": 3.3421593244235064,
+            "energy": -131.3421593244235,
+            "violations": 0,
+            "runtime": 0.8305454254150391,
+            "n_selected": 4,
+            "selected_indices": [
+              0,
+              2,
+              6,
+              9
+            ]
+          }
+        ]
+      },
+      "pasqal": {
+        "mean_coverage": 4.890435066433601,
+        "std_coverage": 0.0,
+        "mean_violations": 3.0,
+        "all_runs": [
+          {
+            "coverage": 4.890435066433601,
+            "violations": 3,
+            "n_selected": 7,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9
+            ],
+            "bitstring": "1011001111",
+            "total_counts": 22,
+            "unique_bitstrings": 22,
+            "top_5_counts": {
+              "1011001111": 1,
+              "1011000111": 1,
+              "1011001101": 1,
+              "1011011110": 1,
+              "1011011100": 1
+            },
+            "runs": 500,
+            "batch_id": "dbc61cd4-6387-438f-8ac4-87e41631247f"
+          },
+          {
+            "coverage": 4.890435066433601,
+            "violations": 3,
+            "n_selected": 7,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9
+            ],
+            "bitstring": "1011001111",
+            "total_counts": 26,
+            "unique_bitstrings": 26,
+            "top_5_counts": {
+              "1011001111": 1,
+              "1011001101": 1,
+              "1011011100": 1,
+              "1010001111": 1,
+              "1011011110": 1
+            },
+            "runs": 1000,
+            "batch_id": "bc0cc4f8-55f6-4d4a-8ee4-0f7e2cbd7128"
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "instance_name": "manzanillo_wildfire_sensor_N25_K8",
+    "version": "1.0",
+    "created_date": "2026-03-17",
+    "description": "Wildfire sensor placement for Manzanillo port, 25 candidate locations, budget K=8 sensors, 500m minimum separation",
+    "source": "Chris Erst's optimized_sensor_network.csv + daily_fire_risk_map.tif",
+    "coordinates_crs": "EPSG:4326"
+  },
+  "problem": {
+    "N": 25,
+    "K_budget": 8,
+    "min_separation_m": 500,
+    "lambda_budget": 5.0,
+    "lambda_spatial": 8.0
+  },
+  "candidates": [
+    {
+      "id": 0,
+      "sensor_id": "SENSOR_00",
+      "latitude": 19.0500,
+      "longitude": -104.3150,
+      "layer": "Asset_Defense",
+      "risk_score_raw": 45.2,
+      "risk_score_norm": 0.452,
+      "cost_usd": 18000,
+      "sensor_type": "thermal_camera"
+    }
+  ],
+  "distance_matrix_note": "Computed using geodesic (geopy) or haversine formula. Shape: N×N, units: meters. Upper triangular format.",
+  "distance_matrix": [
+    [0, 234.5, 567.8, 1200.3],
+    [234.5, 0, 456.2, 890.1],
+    [567.8, 456.2, 0, 678.9],
+    [1200.3, 890.1, 678.9, 0]
+  ],
+  "qubo_formulation": {
+    "objective": "maximize sum(risk_score_norm[i] * x[i])",
+    "constraints": [
+      "sum(x[i]) <= K_budget",
+      "if dist[i,j] < min_separation_m then penalize x[i]*x[j]"
+    ],
+    "qubo_equation": "H = -sum(r[i]*x[i]) + lambda_budget*(sum(x[i])-K)^2 + lambda_spatial*sum_{i<j, d[i,j]<500m} x[i]*x[j]"
+  },
+  "baseline_solutions": {
+    "greedy": {
+      "selected_indices": [0, 1, 2, 3, 4, 5, 6, 7],
+      "coverage": 0.7234,
+      "energy": -3.456,
+      "violations": 5,
+      "runtime_ms": 0.5
+    }
+  }
+}

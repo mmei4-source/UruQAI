@@ -1,0 +1,4 @@
+Solver,Seeds,Coverage (mean±std),Coverage (best),Runtime (mean±std),Violations (mean±std)
+Greedy,1,7.4670,7.4670,0.2 ms,5
+Simulated Annealing,5,7.3539±0.0228,7.3790,0.98±0.08 s,0.0±0.0
+"QAOA (M=12, P=2)",5,7.3365±0.0366,7.3790,38.56±0.44 s,0.0±0.0

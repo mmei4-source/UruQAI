@@ -1,0 +1,417 @@
+[
+  {
+    "N": 8,
+    "K": 4,
+    "solvers": {
+      "greedy": {
+        "coverage": 3.489114627978905,
+        "energy": -131.4891146279789,
+        "violations": 0,
+        "runtime": 4.363059997558594e-05,
+        "n_selected": 4,
+        "selected_indices": [
+          3,
+          0,
+          2,
+          1
+        ]
+      },
+      "sa": {
+        "mean_coverage": 3.489114627978905,
+        "std_coverage": 0.0,
+        "mean_violations": 0.0,
+        "std_violations": 0.0,
+        "mean_runtime": 0.7683645089467367,
+        "std_runtime": 0.002667978551981342,
+        "all_runs": [
+          {
+            "coverage": 3.489114627978905,
+            "energy": -131.4891146279789,
+            "violations": 0,
+            "runtime": 0.7698004245758057,
+            "n_selected": 4,
+            "selected_indices": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "iterations": 50000
+          },
+          {
+            "coverage": 3.489114627978905,
+            "energy": -131.4891146279789,
+            "violations": 0,
+            "runtime": 0.764624834060669,
+            "n_selected": 4,
+            "selected_indices": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "iterations": 50000
+          },
+          {
+            "coverage": 3.489114627978905,
+            "energy": -131.4891146279789,
+            "violations": 0,
+            "runtime": 0.7706682682037354,
+            "n_selected": 4,
+            "selected_indices": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "iterations": 50000
+          }
+        ]
+      },
+      "pasqal": {
+        "mean_coverage": 3.3568089620650907,
+        "std_coverage": 0.13230566591381443,
+        "mean_violations": 0.0,
+        "all_runs": [
+          {
+            "coverage": 3.2245032961512763,
+            "violations": 0,
+            "n_selected": 4,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              5
+            ],
+            "bitstring": "10110100",
+            "total_counts": 28,
+            "unique_bitstrings": 28,
+            "top_5_counts": {
+              "00011111": 1,
+              "10110111": 1,
+              "10110101": 1,
+              "10100111": 1,
+              "11110001": 1
+            },
+            "runtime": 66.76116585731506,
+            "runs": 2000,
+            "batch_id": "f5559fb1-c571-4a68-98c4-60cd5228322e"
+          },
+          {
+            "coverage": 3.489114627978905,
+            "violations": 0,
+            "n_selected": 4,
+            "selected_indices": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "bitstring": "11110000",
+            "total_counts": 36,
+            "unique_bitstrings": 36,
+            "top_5_counts": {
+              "10110111": 1,
+              "10100111": 1,
+              "00001111": 1,
+              "00011111": 1,
+              "10110101": 1
+            },
+            "runtime": 26.809582471847534,
+            "runs": 5000,
+            "batch_id": "fcc2646e-6fcc-47a8-9d5f-e6f01e493b96"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "N": 10,
+    "K": 8,
+    "solvers": {
+      "greedy": {
+        "coverage": 6.271798692089584,
+        "energy": -350.27179869208953,
+        "violations": 7,
+        "runtime": 3.62396240234375e-05,
+        "n_selected": 8,
+        "selected_indices": [
+          8,
+          2,
+          7,
+          1,
+          3,
+          6,
+          4,
+          9
+        ]
+      },
+      "sa": {
+        "mean_coverage": 4.395456173532525,
+        "std_coverage": 0.0,
+        "mean_violations": 1.0,
+        "std_violations": 0.0,
+        "mean_runtime": 0.8849162260691324,
+        "std_runtime": 0.12884828650227118,
+        "all_runs": [
+          {
+            "coverage": 4.395456173532525,
+            "energy": -460.39545617353247,
+            "violations": 1,
+            "runtime": 1.0671277046203613,
+            "n_selected": 6,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              9
+            ],
+            "iterations": 50000
+          },
+          {
+            "coverage": 4.395456173532525,
+            "energy": -460.39545617353247,
+            "violations": 1,
+            "runtime": 0.7952437400817871,
+            "n_selected": 6,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              9
+            ],
+            "iterations": 50000
+          },
+          {
+            "coverage": 4.395456173532525,
+            "energy": -460.39545617353247,
+            "violations": 1,
+            "runtime": 0.792377233505249,
+            "n_selected": 6,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              9
+            ],
+            "iterations": 50000
+          }
+        ]
+      },
+      "pasqal": {
+        "mean_coverage": 5.395456173532525,
+        "std_coverage": 0.0,
+        "mean_violations": 3.0,
+        "all_runs": [
+          {
+            "coverage": 5.395456173532525,
+            "violations": 3,
+            "n_selected": 7,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9
+            ],
+            "bitstring": "1011001111",
+            "total_counts": 37,
+            "unique_bitstrings": 37,
+            "top_5_counts": {
+              "1011001111": 1,
+              "1011001101": 1,
+              "1010001101": 1,
+              "1011011100": 1,
+              "0011001111": 1
+            },
+            "runtime": 61.38613796234131,
+            "runs": 2000,
+            "batch_id": "d79b7255-b330-4e6a-b426-b7701a80d536"
+          },
+          {
+            "coverage": 5.395456173532525,
+            "violations": 3,
+            "n_selected": 7,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9
+            ],
+            "bitstring": "1011001111",
+            "total_counts": 48,
+            "unique_bitstrings": 48,
+            "top_5_counts": {
+              "1011001111": 1,
+              "1011001101": 1,
+              "1011010100": 1,
+              "1011001001": 1,
+              "1010001111": 1
+            },
+            "runtime": 24.470942974090576,
+            "runs": 5000,
+            "batch_id": "423e9e9d-c64d-4a41-bf1c-c089b9443250"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "N": 12,
+    "K": 8,
+    "solvers": {
+      "greedy": {
+        "coverage": 6.593663395647347,
+        "energy": -374.5936633956473,
+        "violations": 6,
+        "runtime": 2.765655517578125e-05,
+        "n_selected": 8,
+        "selected_indices": [
+          5,
+          1,
+          8,
+          3,
+          11,
+          9,
+          7,
+          10
+        ]
+      },
+      "sa": {
+        "mean_coverage": 5.245847201180754,
+        "std_coverage": 0.0,
+        "mean_violations": 1.0,
+        "std_violations": 0.0,
+        "mean_runtime": 0.7811057567596436,
+        "std_runtime": 0.012318926675979641,
+        "all_runs": [
+          {
+            "coverage": 5.245847201180754,
+            "energy": -485.24584720118077,
+            "violations": 1,
+            "runtime": 0.7966139316558838,
+            "n_selected": 7,
+            "selected_indices": [
+              0,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "iterations": 50000
+          },
+          {
+            "coverage": 5.245847201180754,
+            "energy": -485.24584720118077,
+            "violations": 1,
+            "runtime": 0.7664773464202881,
+            "n_selected": 7,
+            "selected_indices": [
+              0,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "iterations": 50000
+          },
+          {
+            "coverage": 5.245847201180754,
+            "energy": -485.24584720118077,
+            "violations": 1,
+            "runtime": 0.7802259922027588,
+            "n_selected": 7,
+            "selected_indices": [
+              0,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "iterations": 50000
+          }
+        ]
+      },
+      "pasqal": {
+        "mean_coverage": 5.86646922232646,
+        "std_coverage": 0.0,
+        "mean_violations": 3.0,
+        "all_runs": [
+          {
+            "coverage": 5.86646922232646,
+            "violations": 3,
+            "n_selected": 8,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "bitstring": "101100011111",
+            "total_counts": 65,
+            "unique_bitstrings": 65,
+            "top_5_counts": {
+              "111100010111": 1,
+              "111100011111": 1,
+              "111000010101": 1,
+              "110100011111": 1,
+              "101100010111": 1
+            },
+            "runtime": 31.72362995147705,
+            "runs": 2000,
+            "batch_id": "f4fd1294-5d42-42ec-8b82-7b923f5774e2"
+          },
+          {
+            "coverage": 5.86646922232646,
+            "violations": 3,
+            "n_selected": 8,
+            "selected_indices": [
+              0,
+              2,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "bitstring": "101100011111",
+            "total_counts": 100,
+            "unique_bitstrings": 100,
+            "top_5_counts": {
+              "111100010110": 1,
+              "110100011111": 1,
+              "111100010111": 1,
+              "111000011111": 1,
+              "111100011111": 1
+            },
+            "runtime": 63.867424964904785,
+            "runs": 5000,
+            "batch_id": "52a9de9f-0c6e-4c3a-b34c-6e8aa8c34611"
+          }
+        ]
+      }
+    }
+  }
+]
